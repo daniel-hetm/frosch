@@ -1,0 +1,12 @@
+<h2>Special Frog!</h2>
+<button class="button" [disabled]="clicked" (click)="handleClick()">Click me!</button>
+<button class="button" [disabled]="!clicked" (click)="handleClick()">No me!</button>
+
+<div>
+  <h3>{{ displayfrog.name }}</h3>
+  <img [src]="displayfrog.img" width="200px" />
+  <p>
+    size: {{ displayfrog.size }} <br />
+    {{ displayfrog.special }}
+  </p>
+</div>

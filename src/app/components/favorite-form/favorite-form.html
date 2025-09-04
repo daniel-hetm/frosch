@@ -1,0 +1,25 @@
+<form (ngSubmit)="onSubmit()">
+  <h2>Favorite Frog?</h2>
+  <!--[formGroup]="myForm" -->
+  <div>
+    <label for="input1">Input 1:</label>
+    <input id="input1" formControlName="input1" type="text" />
+  </div>
+
+  <div>
+    <label for="input2">Input 2:</label>
+    <input id="input2" formControlName="input2" type="text" />
+  </div>
+
+  <div>
+    <label for="input3">Input 3:</label>
+    <input id="input3" formControlName="input3" type="text" />
+  </div>
+
+  <div>
+    <label for="input4">Input 4:</label>
+    <input id="input4" formControlName="input4" type="text" />
+  </div>
+
+  <button type="submit" [disabled]="myForm.invalid">Submit</button>
+</form>

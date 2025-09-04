@@ -1,0 +1,13 @@
+<h3
+  [class]="{
+    green: frog.special === true,
+    red: frog.special === false,
+  }"
+>
+  {{ frog.name }}
+</h3>
+<img [src]="frog.img" appMagnifier />
+<p>
+  size: {{ frog.size }} <br />
+  {{ frog.special }}
+</p>

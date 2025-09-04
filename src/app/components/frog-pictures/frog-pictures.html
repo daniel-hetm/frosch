@@ -1,0 +1,5 @@
+<div class="container">
+  @for (frog of frogProvider.frogsPipe | async; track $index) {
+    <app-frog [frog]="frog"></app-frog>
+  }
+</div>
